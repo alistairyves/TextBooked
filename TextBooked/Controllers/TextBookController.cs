@@ -1,4 +1,5 @@
-﻿using System;
+﻿using TextBooked.Models;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Net;
@@ -9,12 +10,14 @@ namespace TextBooked.Controllers
 {
     public class TextBookController : ApiController
     {
-        public string[] Get()
+        public TextBook Get()
         {
-            return new string[]
+            return new TextBook
             {
-                "Hello",
-                "World"            
+                Id=1,
+                title="The",
+                author="Him",
+                PostDate=DateTime.Now,
             };
         }
     }
