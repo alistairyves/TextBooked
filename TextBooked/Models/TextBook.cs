@@ -8,9 +8,9 @@ namespace TextBooked.Models
     public class TextBook
     {
         public int Id { get; set; }
-        public string title { get; set; }
-        public string author { get; set; }
-        public string isbn { get; set; }
+        public string Title { get; set; }
+        public string Author { get; set; }
+        public string Isbn { get; set; }
         public DateTime PostDate { get; set; }
     }
 }
